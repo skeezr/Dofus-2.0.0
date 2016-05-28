@@ -1,0 +1,29 @@
+package com.ankamagames.jerakine.console
+{
+   import com.ankamagames.jerakine.messages.Message;
+   
+   public class ConsoleOutputMessage implements Message
+   {
+       
+      private var _consoleId:String;
+      
+      private var _text:String;
+      
+      public function ConsoleOutputMessage(consoleId:String, text:String)
+      {
+         super();
+         this._consoleId = consoleId;
+         this._text = text;
+      }
+      
+      public function get consoleId() : String
+      {
+         return this._consoleId;
+      }
+      
+      public function get text() : String
+      {
+         return this._text;
+      }
+   }
+}

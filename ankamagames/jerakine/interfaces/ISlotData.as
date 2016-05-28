@@ -1,0 +1,22 @@
+package com.ankamagames.jerakine.interfaces
+{
+   import com.ankamagames.jerakine.types.Uri;
+   
+   public interface ISlotData
+   {
+       
+      function get iconUri() : Uri;
+      
+      function get fullSizeIconUri() : Uri;
+      
+      function get errorIconUri() : Uri;
+      
+      function get info1() : String;
+      
+      function get active() : Boolean;
+      
+      function addHolder(param1:ISlotDataHolder) : void;
+      
+      function removeHolder(param1:ISlotDataHolder) : void;
+   }
+}
