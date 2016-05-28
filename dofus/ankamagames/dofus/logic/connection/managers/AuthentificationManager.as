@@ -90,11 +90,5 @@ package com.ankamagames.dofus.logic.connection.managers
       {
          _self = null;
       }
-      
-      private function cipherString(pwd:String) : String
-      {
-         var md5:MD5 = new MD5();
-         return md5.encrypt(md5.encrypt(pwd) + this._key);
-      }
    }
 }
